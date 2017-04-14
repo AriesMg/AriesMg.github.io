@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/14/我的第一篇文章/index.html">
 <meta property="og:site_name" content="AriesMg的博客">
 <meta property="og:description" content="折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下： _config.yml的配置文件中键值对中间必须加空格，例如author： tom 中冒号后面要加空格，否则很容易报错。 _config.yml中包含中文，需要显示">
-<meta property="og:updated_time" content="2017-04-14T08:42:20.540Z">
+<meta property="og:updated_time" content="2017-04-14T09:02:46.072Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建静态博客问题总结">
 <meta name="twitter:description" content="折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下： _config.yml的配置文件中键值对中间必须加空格，例如author： tom 中冒号后面要加空格，否则很容易报错。 _config.yml中包含中文，需要显示">
@@ -176,10 +176,12 @@
 <p>_config.yml的配置文件中键值对中间必须加空格，例如author： tom 中冒号后面要加空格，否则很容易报错。</p>
 <p>_config.yml中包含中文，需要显示指定language： zh_CN</p>
 <p>_config.yml的deploy必须是如下格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:liuxianan/liuxianan.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>执行 hexo d 如果出现如下错误</p>
+<p>执行 hexo d 如果出现如下错误：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;Deployer not found: github 或者 Deployer not found: git</div></pre></td></tr></table></figure>
-<p>执行如下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>执行如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&gt;npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>安装完成后就可以使用以下命令来创建博文：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;hexo n &quot;my first article&quot;</div></pre></td></tr></table></figure></p>
+<p>推荐大家使用Atom，Atom内置对markdown的支持，能够方便的进行解析预览。</p>
 
       
 

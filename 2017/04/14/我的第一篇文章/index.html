@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇文章 | AriesMg的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录生活点滴">
+  <meta name="description" content="折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下：   _config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。  _config.yml中包含中文，需要显示指定langu">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇文章">
 <meta property="og:url" content="http://yoursite.com/2017/04/14/我的第一篇文章/index.html">
 <meta property="og:site_name" content="AriesMg的博客">
-<meta property="og:description" content="记录生活点滴">
-<meta property="og:updated_time" content="2017-04-14T06:15:16.015Z">
+<meta property="og:description" content="折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下：   _config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。  _config.yml中包含中文，需要显示指定langu">
+<meta property="og:updated_time" content="2017-04-14T08:02:57.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇文章">
-<meta name="twitter:description" content="记录生活点滴">
+<meta name="twitter:description" content="折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下：   _config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。  _config.yml中包含中文，需要显示指定langu">
   
     <link rel="alternative" href="/atom.xml" title="AriesMg的博客" type="application/atom+xml">
   
@@ -172,7 +172,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下：</p>
+<blockquote>
+<ol>
+<li><p>_config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。</p>
+</li>
+<li><p>_config.yml中包含中文，需要显示指定language： zh_CN</p>
+</li>
+<li><p>_config中的deploy配置必须如下<br><br> deploy:<br></p>
+<pre><code>type: git&lt;br&gt;
+repository:git@github.com:liuxianan/liuxianan.github.io.git&lt;br&gt;
+branch: master&lt;br&gt;
+</code></pre></li>
+<li><p>如果出现Deployer not found: github 或者 Deployer not found: git<br><br>执行npm install hexo-deployer-git –save</p>
+</li>
+</ol>
+</blockquote>
+
       
 
       

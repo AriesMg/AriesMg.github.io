@@ -174,19 +174,10 @@
       
         <p>折腾了一上午，终于用hexo和github搭建了一个静态博客网页，整个流程感觉还是挺容易上手的，主要是我已经配好了node和github，安装hexo还是挺简单，照着命令安装就可以，难点可能在hexo的配置上，有很多坑，下面例举一下：</p>
 <blockquote>
-<ol>
-<li><p>_config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。</p>
-</li>
-<li><p>_config.yml中包含中文，需要显示指定language： zh_CN</p>
-</li>
-<li><p>_config中的deploy配置必须如下<br><br> deploy:<br></p>
-<pre><code>type: git&lt;br&gt;
-repository:git@github.com:liuxianan/liuxianan.github.io.git&lt;br&gt;
-branch: master&lt;br&gt;
-</code></pre></li>
-<li><p>如果出现Deployer not found: github 或者 Deployer not found: git<br><br>执行npm install hexo-deployer-git –save</p>
-</li>
-</ol>
+<p>_config.yml的配置文件中键值对中间必须加空格，例如author： tom 否则很容易报错。</p>
+<p>_config.yml中包含中文，需要显示指定language： zh_CN</p>
+<p>_config中的deploy配置必须如下<br>    deploy:<br>        type: git<br>        repository:git@github.com:liuxianan/liuxianan.github.io.git<br>        branch: master</p>
+<p>如果出现Deployer not found: github 或者 Deployer not found: git执行<br>npm install hexo-deployer-git –save</p>
 </blockquote>
 
       
